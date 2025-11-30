@@ -1,0 +1,10 @@
+services:
+  app:
+    image: node:20-alpine
+    working_dir: /app
+    tty: true
+    volumes:
+      - ./app:/app      # ← ここがポイント！！！（. じゃなくて ./app）
+    command: sh -c "npm run dev"
+    ports:
+      - "3000:3000"
