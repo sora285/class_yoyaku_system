@@ -244,10 +244,10 @@ export default function RoomAvailability({ floor, date }: RoomAvailabilityProps)
             <Dialog open={isNewBookingDialogOpen} onOpenChange={setIsNewBookingDialogOpen}>
                 <DialogContent className="sm:max-w-[500px], bg-white">
                     <DialogHeader>
-                        <DialogTitle className="font-['Inter:Medium','Noto_Sans_JP:Medium',sans-serif]">
+                        <DialogTitle className="font-['Inter:Medium','Noto_Sans_JP:Medium',sans-serif] text-[#030213]">
                             {bookingStep === 'select' ? '予約詳細の入力' : '予約内容の確認'}
                         </DialogTitle>
-                        <DialogDescription className="font-['Inter:Regular','Noto_Sans_JP:Regular',sans-serif]">
+                        <DialogDescription className="font-['Inter:Regular','Noto_Sans_JP:Regular',sans-serif] text-[#6a7282]">
                             {bookingStep === 'select' ? '教室の予約日時を選択してください' : '以下の内容で予約を確定します'}
                         </DialogDescription>
                     </DialogHeader>
